@@ -17,7 +17,7 @@ Data preprocessing steps include:
 •	Lowercasing
 •	Stopword removal
 •	Lemmatization
-________________________________________
+
 Models Used
 We experimented with both traditional ML models and a CNN deep learning model.
 Traditional Machine Learning Models:
@@ -28,7 +28,7 @@ Traditional Machine Learning Models:
 Deep Learning Model:
 •	 CNN (without embeddings)
 •	 CNN + FastText Embeddings (enhanced model)
-________________________________________
+
  Experiments
 •	 Models were trained with and without FastText embeddings.
 •	 Hyperparameter tuning was applied to the CNN models to optimize:
@@ -37,8 +37,8 @@ o	Number of filters
 o	Dropout rates
 o	Learning rates
 o	Optimizers (Adam, RMSProp, SGD)
-________________________________________
-🧠 CNN + FastText Model Architecture
+
+ CNN + FastText Model Architecture
 Input Layer (Preprocessed Text)
         ↓
 FastText Embedding Layer (300-d)
@@ -65,7 +65,7 @@ Main libraries:
 •	tensorflow / keras
 •	fasttext
 •	matplotlib (for plots)
-________________________________________
+
 Usage
 1. Preprocess the Dataset
 python preprocess.py --input data/raw.csv --output data/cleaned.csv
